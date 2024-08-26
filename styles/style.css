@@ -1,0 +1,56 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&family=Short+Stack&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+*{
+    margin: 0px;
+}
+
+body{
+    background-image: linear-gradient(to left,#3E758A,#2680a3,#147297);
+    
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 1.25rem ;
+    padding-block: 1.25rem ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.nav_ul{
+    display: flex;
+    list-style: none;
+    gap: 2rem;   
+}
+.nav_a{
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+}
+.nav_a:hover{
+    color: #31b7ec;
+    transition-duration: 0.2s;
+}
+.container{
+    margin: auto;
+    margin-top: 70px;
+    background-image: url('../imagens/img_1.jpg');
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 20px black ;
+    width: 450px;
+    height: 450px;
+}
+.container .div_logo{
+    padding-top: 297px;
+    text-align: center;
+    font-family: "Caveat", cursive;
+    font-style: 50px;
+    color:rgb(0, 0, 0);
+}
+.link_ref{
+    margin-left: 350px;
+}
+.link_a{
+    text-decoration: none;
+}
