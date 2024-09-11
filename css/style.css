@@ -23,6 +23,10 @@ body{
     font-size: 40px;
 }
 nav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
     background-color: #000000;
     color: white;
     padding: 10px;
@@ -36,20 +40,22 @@ nav{
     justify-content: space-between;
     align-items: center;
     list-style: none;
+    
 }
-.nav_list li{
-    margin-left: 15px;
+.nav_list img{
+   height: 17px;
+   
 }
 .nav_a{
     margin-left: 25px;
     color:white;
     padding:10px ;
-    border-radius: 10px;
+    border-radius: 6px;
     text-decoration: none;
 }
 
 .nav_a:hover{
-    background-color: #3D768A;
+    background-color: rgba(92, 92, 92, 0.452);
     transition-duration: 0.2s;
 }
 .mobile_menu{
@@ -64,9 +70,10 @@ nav{
     margin: 8px;
     transition: 0.3s;
 }
-.container{
+
+main .container{
     margin: auto;
-    margin-top: 50px;
+    margin-top: 150px;
     background-image: url('../imagens/img_1.jpg');
     padding: 10px;
     border-radius: 50%;
@@ -85,7 +92,10 @@ button{
     font-size: 17px;
 }
 button:hover{
-    background-color: #086488;
+    font-size: 20px ;
+    padding: 15px;
+    background-color: #babafc;
+    transition-duration: .2s;
 }
 .link_ref{
     margin-left: 350px;
@@ -144,10 +154,27 @@ p{
 footer{
     background-color: #0e2730;
     color: white;
-    padding: 5px;
-}
-footer p{
+    padding: 10px;
+    padding-top: 10px;
     margin: 0;
-    width: 100%;
-    text-align: center;
+}
+.div_footer{
+    height: 30vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer_img{
+    padding-top: 20px ;
+    height: 40px;
+  
+}
+.footer_logo p{
+    font-size: 60px;
+    margin-top: 0px;
+    margin: 0;
+    
+}
+.div_footer p{
+    margin: 0;
 }
