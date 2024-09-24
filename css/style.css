@@ -3,6 +3,17 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
 
+@keyframes animacao{
+    from{
+        background-color: #000000;
+        border-radius: 10%;
+    }
+    to{
+        background-color: #babafc;
+        border-radius: 50%;
+    }
+}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -40,11 +51,8 @@ nav{
     justify-content: space-between;
     align-items: center;
     list-style: none;
+    z-index: 1;
     
-}
-.nav_list img{
-   height: 17px;
-   
 }
 .nav_a{
     margin-left: 25px;
@@ -86,16 +94,19 @@ button{
     margin-top: 300px;
     margin-left: 132px;
     border-radius: 70px;
-    border: none;
-    box-shadow: 5px 5px 5px black;
+    border: 1px solid black;
     width: 200px;
     font-size: 17px;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    z-index: 0;
+    
 }
 button:hover{
     font-size: 20px ;
     padding: 15px;
-    background-color: #babafc;
     transition-duration: .2s;
+    
 }
 .link_ref{
     margin-left: 350px;
@@ -124,6 +135,7 @@ div > h2{
 }
 
 #sobre_mim{
+    
     padding-bottom: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     
@@ -167,6 +179,7 @@ footer{
 .footer_img{
     padding-top: 20px ;
     height: 40px;
+    animation: animacao 2s infinite delay iteration-count to fill-mode;
   
 }
 .footer_logo p{
